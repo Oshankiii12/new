@@ -1,9 +1,26 @@
-*{
+* {
 	background-color: #081212;
 }
-p,h1,h2,h3,h4,h5,h6,span,div, img{
+
+body{
+	background: rgba(21, 48, 49, 0);	
+}
+
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div,
+img {
 	background: none;
 }
+
 html {
 	line-height: 1.15;
 	-ms-text-size-adjust: 100%;
@@ -1440,6 +1457,7 @@ label {
 	font-weight: 400;
 	margin-top: 10%;
 	font-family: 'Poppins', sans-serif;
+	padding-bottom: 50px;
 }
 
 
@@ -1500,8 +1518,10 @@ label {
 }
 
 .hero-copy {
-	padding-right: 100px;
-	width: 60%;
+	z-index: 2;
+    margin: 0;
+    padding: 0;
+    width: 50%;
 }
 
 .hero-inner {
@@ -1607,37 +1627,75 @@ label {
 }
 
 .features-p {
-	font-size: 16px;
-	line-height: 25px;
-	font-weight: 400;
-	font-family: 'Poppins', sans-serif;
+	color: #D6E8E3;
+	font-family: 'Poppins';
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 
-header{
+header {
 	background: none;
 }
 
 .hero {
-	background: radial-gradient(ellipse at 70%, rgba(49, 114, 114, 0.8), 10%, #081212);
+	background: linear-gradient(177.65deg, rgba(49, 114, 114, 0.8) 2.02%, rgba(21, 48, 49, 0) 88.11%);
 	color: rgba(214, 232, 227, 1);
 
 }
 
-.container-fluid-one {
-	background: radial-gradient(ellipse at 30%, rgba(49, 114, 114, 0.8), 10%, #081212);
+.shadow{	
+    height: 100px;
+    /* border: 1px solid red; */
+    position: absolute;
+    right: 350px;
+    border-radius: 100%;
+    /* float: right; */
+    z-index: 1;
+    background-color: rgba(49, 114, 114, 0.8);
+    box-shadow: 0 0 427px 300px rgba(49, 114, 114, 0.8);
+}
+
+.shadow2{	
+	width: 800px;
+    position: absolute;
+    left: 0px;
+	margin-top: 200px;
+    border-radius: 100%;
+    z-index: 1;
+    background-color: rgba(49, 114, 114, 0.8);
+    box-shadow: 0 0 327px 80px rgba(49, 114, 114, 0.8);
+}
+
+.img {
+	z-index: 2;
+	/* background: rgba(49, 114, 114, 0.8);   */
+	/* border-radius: 100%;
+	
+	
+    box-shadow: 0 0 500px rgba(49, 114, 114, 0.8);  */
+}
+
+.features-header{
+	background: none;
+}
+
+.features-wrap {
+	/* background: linear-gradient(88.3deg, #163333 23.85%, rgba(16, 39, 39, 0.1) 96.1%); */
+
+
 }
 
 .container-fluid-two {
 	/*background: rgb(49, 114, 114);*/
-	background: radial-gradient(ellipse at center, rgba(49, 114, 114, 0.8), 10%, #081212);
-	backdrop-filter: blur(10px);
+	/* background: radial-gradient(ellipse at center, rgba(49, 114, 114, 0.8), 10%, #081212);
+	backdrop-filter: blur(10px); */
 }
 
-.testimonials {
-	background: radial-gradient(ellipse at center, rgba(49, 114, 114, 0.8), 1%, #081212);
-}
-
-.sponsers{
+.sponsers {
 	padding-top: 100px;
 	/* background: linear-gradient(180deg, rgba(49, 114, 114, 0.8), #081212); */
 }
@@ -1669,12 +1727,25 @@ header{
 }
 
 .feature-title1 {
-	color: rgba(214, 232, 227, 1);
+	color: #D6E8E3;
+	font-family: Poppins;
+font-size: 24px;
+font-weight: 500;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 
 .feature-title-no {
-	color: rgba(214, 232, 227, 1);
-	font-size: 100px;
+	color: #B4D5CC;
+	font-family: 'Poppins';
+font-size: 84px;
+font-weight: 700;
+line-height: 101px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 
 
@@ -1767,7 +1838,7 @@ header{
 .testimonials {
 	/* max-width: 1440px;  Gotta remove this or they won't be centered or atleast I can't get it to be centered */
 	position: relative;
-	
+
 	padding-top: 50px;
 	margin-bottom: -100px
 }
@@ -2292,6 +2363,12 @@ button {
 	cursor: pointer;
 }
 
+@media (min-width:849px) and (max-width:1131px) {
+	.hero-form{
+		padding-top: 50px;
+	}
+}
+
 @media (max-width: 641px) {
 	.contact-us-container {
 		display: flex;
@@ -2503,18 +2580,26 @@ button {
 
 .view {
 	width: 100%;
-	margin-top: -150px;	
+	margin-top: -150px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 }
 
+
+
 .view .card-carousel-wrap {
 	width: 80%;
-	max-width: 1000px;
+	max-width: 1200px;
 	overflow: hidden;
 }
+
+.testimonial-body p {
+	line-height: 18px;
+	font-size: 15px;
+}
+
 
 .card {
 	border-radius: 20px;
@@ -2523,7 +2608,7 @@ button {
 	box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.8);
 	transform: scale(0.8);
 	max-height: 110%;
-	
+
 }
 
 .card .card-content {
@@ -2557,91 +2642,70 @@ button {
 	.card .card-content p {
 		margin-bottom: 12px;
 		font-family: 'Poppins';
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: -0.045em;
-text-align: left;
+		font-weight: 400;
+		letter-spacing: -0.045em;
+		text-align: left;
 
 	}
 }
 
-.img img{
-	width:500px;
+.img img {
+	width: 500px;
 }
 
-.jd-div{
-	margin-left: 0%; 
-	margin-top: -4%; 
+.jd-div {
+	margin-left: 0%;
+	margin-top: -4%;
 	width: 100%;
 }
 
-.hero-inner{
-	display: flex; 
+.hero-inner {
+	display: flex;
 	justify-content: space-between;
 	margin-left: 8%;
 }
 
-.head{
-	margin-left:6.6%;
+.head {
+	margin-left: 6.6%;
 }
 
-.section-title-how{
+.section-title-how {
+	color: #D6E8E3;
 	margin-bottom: 50px;
+	font-family: 'Poppins';
+font-size: 60px;
+font-weight: 700;
+line-height: 72px;
+letter-spacing: 0em;
+text-align: center;
+
 }
 
 
-.features-wrap .feature{
-	padding: 0 00px 0 0px;  
+.features-wrap .feature {
+	padding: 30px 0px 70px 0px;
 	width: fit-content;
 }
 
-@media screen and (max-width:450px){
-	.img img{
-		width: 400px;
-		margin-left: 2%;
-	}
-	.jd-div{
-		margin-top: 4%;
-		margin-left: -2%;
-	}
-	.hero-inner{
-		margin-left: 4%;
-		justify-content: center;
-		
-	}
-	.head{
-		padding-left: 0px;
-		margin-left: 0px;
-		justify-content: center;
-	}
-	.site-header-inner{
-		margin-left: 0;
-		justify-content: center;
-	}
-	.site-header{
-		margin-bottom: 20px;
-	}
-	.container{
-		padding: 0;
-	}
-	.section-title-how{
-		line-height: 60px;
-	}
-	.feature-inner1{
-		margin: 0;
-	}
-	.features-wrap{
-		margin: 0px 0px;
-	}
-
-	.feature-inner-projects .features-wrap{
-		margin-bottom: 40px;
-	}
-
+.feature-inner-projects .features-wrap .feature {
+	height: max-content;
+	margin: 1%;
 }
 
+.card-back img.quotes {
+	width: 46.84px;
+	margin-left: -3%;
+	position: absolute;
+	padding-top: 15%;
+}
 
+.card-back .card-content img.test-img{
+	margin-top: -75px;
+	border-radius: 100%; 
+	width: 150px; 
+	height: 150px; 
+	border: 10px solid white;
+}
 
 .card .card-content .product-wrap {
 	width: 80%;
@@ -2658,6 +2722,9 @@ text-align: left;
 
 .owl-stage .active .item .card-wrap .card {
 	background: rgb(163, 180, 176);
+}
+.owl-stage .active .item .card-wrap .card .card-back .card-content img.test-img {
+	border: 10px solid #F4F3F3;
 }
 
 .owl-stage .center .item .card-wrap .card {
@@ -2680,11 +2747,10 @@ text-align: left;
 	padding: 0;
 	margin: 10px 0;
 	font-family: 'Poppins';
-font-size: 24px;
-font-weight: 700;
-line-height: 29px;
-letter-spacing: -0.045em;
-text-align: justified;
+	font-weight: 700;
+	line-height: 29px;
+	letter-spacing: -0.045em;
+	text-align: justified;
 
 }
 
@@ -2697,23 +2763,378 @@ text-align: justified;
 	line-height: 15px;
 	letter-spacing: -0.045em;
 	text-align: justified;
-	
+
 	color: rgb(30, 65, 67);
 }
 
-.testimonial-heading{
-	padding-bottom: 50px;
-}
 
-.project-heading{
+
+.project-heading {
 	padding-bottom: 80px;
 }
 
-.feature-inner1{
+.feature-inner1 {
 	padding-left: 60px;
 	padding-right: 60px;
 }
 
-.features-wrap{
+.features-wrap {
 	padding: 5px;
+}
+
+.owl-stage .active .item .card-wrap .card .card-back .card-content img.test-img{
+	width: 136px;
+	height: 136px;
+}
+.owl-stage .center .item .card-wrap .card .card-back .card-content img.test-img{
+	height: 150px;
+}
+
+/* @media screen and (min-width:1467px){
+	.hero-inner {
+		margin-left: 4%;
+		justify-content: center;
+
+	}
+
+	.head {
+		padding-left: 0px;
+		margin-left: 0px;
+		justify-content: center;
+	}
+
+	.site-header-inner {
+		margin-left: 0;
+		justify-content: center;
+	}
+
+	.site-header {
+		margin-bottom: 20px;
+	}
+
+	.container {
+		padding: 0;
+	}
+
+	.section-title-how {
+		line-height: 60px;
+	}
+
+	.feature-inner1 {
+		margin: 0;
+	}
+
+	.features-wrap {
+		margin: 0px 0px;
+	}
+}  */
+
+@media screen and (min-width:1125){
+	.features-wrap .feature {
+		padding: 30px 30px 70px 30px;
+		width: fit-content;
+	}
+} 
+
+
+@media screen and (min-width:860px){
+	.features-wrap .feature {
+		padding: 30px 30px 70px 30px;
+		width: fit-content;
+	}
+} 
+
+@media screen and (max-width:850px) {
+	.view {
+		margin-top: 50px;
+	}
+
+	.view .card-carousel-wrap {
+		width: 90%;
+	}
+	.img img {
+		width: 400px;
+		margin-left: 2%;
+	}
+
+	.jd-div {
+		margin-top: 4%;
+		margin-left: -2%;
+	}
+
+	.hero-inner {
+		margin-left: 4%;
+		justify-content: center;
+
+	}
+
+	.head {
+		padding-left: 0px;
+		margin-left: 0px;
+		justify-content: center;
+	}
+
+	.site-header-inner {
+		margin-left: 0;
+		justify-content: center;
+	}
+
+	.site-header {
+		margin-bottom: 20px;
+	}
+
+	.container {
+		padding: 0;
+	}
+
+	.section-title-how {
+		line-height: 60px;
+	}
+
+	.feature-inner1 {
+		margin: 0;
+	}
+
+	.features-wrap {
+		margin: 0px 0px;
+	}
+
+
+	.owl-stage .active {
+		width: 90%;
+	}
+
+	.card .card-content p {
+		line-height: 150%;
+		font-size: 35%;
+	}
+
+	.card-back img.quotes {
+		width: 46.84px;
+		margin-left: -5%;
+		position: absolute;
+		padding-top: 12%;
+
+	}
+
+	.site-footer-inner {
+		margin: 0 5px 0 5px;
+		padding: 40px;
+	}
+
+	.card-back .card-content img.test-img{
+		margin-top: -50px;
+    border-radius: 100%;
+    width: 90.9px;
+    height: 100px;
+    border: 10px solid white;
+	}
+
+	.testimonial-footer{
+		margin: 0 ;
+	}
+
+	.testimonials .section-title{
+		margin-bottom: -50px;
+	}
+
+	.testimonial-footer h6{
+		color: rgb(62, 133, 137);
+    padding: 0;
+    margin: 0 0;
+    font-family: 'Poppins';
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -0.045em;
+    text-align: justify;
+	}
+
+	.owl-stage .active .item .card-wrap .card .card-back .card-content img.test-img{
+		width: 90.9px;
+		height: 90.9px;
+	}
+	.owl-stage .center .item .card-wrap .card .card-back .card-content img.test-img{
+		height: 100px;
+	}
+	.hero .hero-out .hero-inner .hero-copy{
+		margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	}
+	.hero-paragraph{
+		margin: 20px 0px;
+	}
+	.hero-form{
+		justify-content: center	;
+	}
+
+}
+
+@media screen and (max-width:450px) {
+	.view {
+		margin-top: 50px;
+	}
+
+	.view .card-carousel-wrap {
+		width: 90%;
+	}
+	.img img {
+		width: 400px;
+		margin-left: 2%;
+	}
+
+	.jd-div {
+		margin-top: 4%;
+		margin-left: -2%;
+	}
+
+	.hero-inner {
+		margin-left: 4%;
+		justify-content: center;
+
+	}
+
+	.head {
+		padding-left: 0px;
+		margin-left: 0px;
+		justify-content: center;
+	}
+
+	.site-header-inner {
+		margin-left: 0;
+		justify-content: center;
+	}
+
+	.site-header {
+		margin-bottom: 20px;
+	}
+
+	.container {
+		padding: 0;
+	}
+
+	.section-title-how {
+		line-height: 60px;
+	}
+
+	.feature-inner1 {
+		margin: 0;
+	}
+
+	.features-wrap {
+		margin: 0px 0px;
+	}
+
+
+	.owl-stage .active {
+		width: 90%;
+	}
+
+	.card .card-content p {
+		line-height: 150%;
+		font-size: 35%;
+	}
+
+	.card-back img.quotes {
+		width: 46.84px;
+		margin-left: -5%;
+		position: absolute;
+		padding-top: 17%;
+	}
+
+	.site-footer-inner {
+		margin: 0 5px 0 5px;
+		padding: 40px;
+	}
+
+	.card-back .card-content img.test-img{
+		margin-top: -40px;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    border: 10px solid white;
+	}
+
+	.testimonial-footer{
+		margin: 0 ;
+	}
+
+	.testimonial-footer h6{
+		color: rgb(62, 133, 137);
+    padding: 0;
+    margin: 0 0;
+    font-family: 'Poppins';
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -0.045em;
+    text-align: justify;
+	}
+}
+
+.how-column{
+	padding: 0px; 
+	width: fit-content; 
+	width: 20%;  
+}
+
+.feature-inner1{
+padding: 5%;
+}
+
+.site-header{
+	z-index: 2;
+}
+
+
+
+@media screen and (min-width:1023px) and (max-width:1198px){
+	.img img{
+		width: 400px;
+	}
+}
+
+
+@media screen and (min-width:848px) and (max-width:1024){
+	.hero-copy{
+		display: flex;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	}
+	
+	.head {
+		padding-left: 0px;
+		margin-left: 0px;
+		justify-content: center;
+	}
+
+	.site-header-inner {
+		margin-left: 0;
+		justify-content: center;
+	}
+
+	.site-header {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (min-width:956px) and (max-width:1121px){
+	.how-column{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width:956px){
+	.how-column{
+		width: 300px;  
+	}
+	
+	.feature-inner1{
+	padding: 20px;
+	}
 }
