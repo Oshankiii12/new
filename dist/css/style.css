@@ -2740,7 +2740,7 @@ button {
 
 .jd-div {
 	margin-left: 0%;
-	/* margin-top: -4%; */
+	/* margin-top: 2%; */
 	width: 100%;
 }
 
@@ -3271,6 +3271,9 @@ button {
 		box-shadow: 0 0 327px 80px rgba(26, 61, 61, 0.7);
 	}
 	
+	.svg{
+		margin-top: -20%;
+	}
 	
 }
 
