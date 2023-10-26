@@ -1458,7 +1458,7 @@ label {
 	font-weight: 400;
 	margin-top: 5%;
 	font-family: 'Poppins', sans-serif;
-	padding-bottom: 50px;
+	/* padding-bottom: 50px; */
 }
 
 
@@ -1644,7 +1644,8 @@ header {
 }
 
 .hero {
-	background: linear-gradient(177.65deg, rgba(49, 114, 114, 0.8) 2.02%, rgba(21, 48, 49, 0) 88.11%);
+	background: linear-gradient(177.65deg, rgba(49, 114, 114, 0.8) , rgba(21, 48, 49, 0) 61.11%);
+	/* background: linear-gradient(177.65deg, rgba(49, 114, 114, 0.8) 2.02%, rgba(21, 48, 49, 0) 88.11%); */
 
 	/* background: linear-gradient(177.65deg, rgba(49, 114, 114, 0.8) 20%, rgba(21, 48, 49, 0) 80%); */
 	color: rgba(214, 232, 227, 1);
@@ -1655,7 +1656,7 @@ header {
 	height: 50px;
 	/* border: 1px solid red; */
 	position: absolute;
-	right: 380px;
+	right: 25%;
 	border-radius: 100%;
 	/* float: right; */
 	z-index: 1;
@@ -2299,7 +2300,7 @@ main {
 }
 
 .jd-button {
-	padding: 0px 23.5px;
+	padding: 3px 23.5px;
 	overflow: hidden;
 	background-color: rgba(214, 232, 227, 1);
 	color: #474e51;
@@ -2317,7 +2318,7 @@ main {
 }
 
 .jd-button1 {
-	padding: 0px 32px;
+	padding: 3px 32px;
 	overflow: hidden;
 	color: rgba(214, 232, 227, 1);
 	position: relative;
@@ -2739,7 +2740,7 @@ button {
 
 .jd-div {
 	margin-left: 0%;
-	margin-top: -4%;
+	/* margin-top: -4%; */
 	width: 100%;
 }
 
@@ -2838,6 +2839,8 @@ button {
 	text-align: justified;
 
 }
+
+
 
 .testimonial-footer p {
 	padding: 0;
@@ -3064,6 +3067,19 @@ button {
 	.hero-form {
 		justify-content: center;
 	}
+
+	.shadow {
+		height: 50px;
+		/* border: 1px solid red; */
+		position: absolute;
+		right: 50%;
+		border-radius: 100%;
+		/* float: right; */
+		z-index: 1;
+		background-color: rgba(49, 114, 114, 0.8);
+		box-shadow: 0 0 427px 200px rgba(49, 114, 114, 0.8);
+	}
+
 	.shadow3 {
 		width: 0%;
 		position: absolute;
@@ -3127,6 +3143,11 @@ button {
 
 	.section-title-how {
 		line-height: 70px;
+		font-size: 40px;
+	}
+
+	.section-title{
+		font-size: 40px;
 	}
 
 	.feature-inner1 {
@@ -3172,7 +3193,7 @@ button {
 	}
 	
 	.testimonial-heading{
-		font-size: 48px;
+		font-size: 40px;
 	}
 
 	.testimonial-footer {
@@ -3249,6 +3270,8 @@ button {
 		background-color: rgba(49, 114, 114, 0.8);
 		box-shadow: 0 0 327px 80px rgba(26, 61, 61, 0.7);
 	}
+	
+	
 }
 
 .how-column {
