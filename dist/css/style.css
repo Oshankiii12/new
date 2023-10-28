@@ -2200,7 +2200,7 @@ main {
 
 .footer-links li+li,
 .footer-social-links li+li {
-	margin-left: 16px;
+	margin-left: 40px;
 	background: none;
 }
 
@@ -2740,7 +2740,7 @@ button {
 
 .jd-div {
 	margin-left: 0%;
-	/* margin-top: 2%; */
+	/* margin-top: -4%; */
 	width: 100%;
 }
 
@@ -2937,7 +2937,7 @@ button {
 	}
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:1024px) {
 	.view {
 		margin-top: 50px;
 	}
@@ -3271,9 +3271,6 @@ button {
 		box-shadow: 0 0 327px 80px rgba(26, 61, 61, 0.7);
 	}
 	
-	.svg{
-		margin-top: -20%;
-	}
 	
 }
 
@@ -3357,3 +3354,24 @@ button {
 svg{
 	background: none;
 }
+
+
+@media screen and (min-width:850px) {
+	.item{
+		width: 80%;
+	}
+}
+@media screen and (min-width:450px) {
+	.top{
+		margin-top: 100px;
+	}
+}
+@media screen and (max-width:450px) {
+	.top{
+		margin-top: 50px;
+	}
+}
+
+
+
+
