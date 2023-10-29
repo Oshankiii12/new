@@ -3355,8 +3355,22 @@ svg{
 	background: none;
 }
 
+@media screen and (max-width:850px) {
+	
+	.feature-title-no{
+		margin-top: 20px;
+		line-height: 80px;
+	}
+	.section-title-how{
+		margin-bottom: 50px;
+	}
+}
 
 @media screen and (min-width:850px) {
+	.view{
+		margin-top: -75px;
+	}
+
 	.item{
 		width: 80%;
 	}
@@ -3369,6 +3383,13 @@ svg{
 @media screen and (max-width:450px) {
 	.top{
 		margin-top: 50px;
+	}
+	.section-title-how{
+		margin-bottom: 0px;
+	}
+	
+	.project-heading{
+		padding-bottom: 0;
 	}
 }
 
